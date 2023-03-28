@@ -70,17 +70,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <EditText
-        android:id="@+id/oplanche"
-        android:layout_width="40dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -127,12 +116,10 @@
         android:id="@+id/b2"
         android:layout_width="91dp"
         android:layout_height="31dp"
-        android:layout_marginStart="11dp"
         android:layout_marginTop="32dp"
         android:text="Adicionar"
         android:textSize="8sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/oplanche"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
@@ -154,5 +141,20 @@
         android:text="Subtotal: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/oplanche"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="173dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b2"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

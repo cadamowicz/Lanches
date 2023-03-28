@@ -30,7 +30,6 @@ public class pag2 extends AppCompatActivity {
                 int opcao1 = Integer.parseInt(op1);
 
                 float subtotal=0;
-
                 switch (opcao1) {
                     case 1:
                         subtotal=10;
