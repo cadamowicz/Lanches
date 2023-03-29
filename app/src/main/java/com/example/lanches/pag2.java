@@ -66,7 +66,9 @@ public class pag2 extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent1 = new Intent(pag2.this, pag3.class);
-                intent1.putExtra("totalpag2",subtotal);
+
+                //intent1.putExtra("totalpag2",sub1.getText().toString());
+                intent1.putExtra("totalpag2",String.valueOf(subtotal) );
                 startActivity(intent1);
 
 
