@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".pag2">
 
+    <EditText
+        android:id="@+id/qtde"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -116,11 +127,12 @@
         android:id="@+id/b2"
         android:layout_width="91dp"
         android:layout_height="31dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="9dp"
         android:text="Adicionar"
         android:textSize="8sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintStart_toEndOf="@+id/sub1"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/sub1"
@@ -144,17 +156,32 @@
 
     <EditText
         android:id="@+id/oplanche"
-        android:layout_width="52dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="173dp"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/b2"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="61dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="349dp"
+        android:text="Qtde"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qtde" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="40dp"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Lanches"
         tools:targetApi="31">
         <activity
+            android:name=".pag3"
+            android:exported="false" />
+        <activity
             android:name=".pag2"
             android:exported="false" />
         <activity
