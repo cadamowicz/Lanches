@@ -43,22 +43,28 @@ public class pag3 extends AppCompatActivity {
                 String qtd2=qtdebebida.getText().toString();
                 int quantidade2=Integer.parseInt(qtd2);
 
+                subtotal1=Float.parseFloat(totalburguer);
+
 
                 switch (opcao2) {
                     case 1:
-                        subtotal1 = subtotal1 +10*quantidade2;
+                        subtotal1 = subtotal1 +5*quantidade2;
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                     case 2:
-                        subtotal1 = subtotal1 +15*quantidade2;
+                        subtotal1 = subtotal1 +5*quantidade2;
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                     case 3:
-                        subtotal1 = subtotal1 +18*quantidade2;
+                        subtotal1 = subtotal1 +3*quantidade2;
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                     case 4:
-                        subtotal1 = subtotal1 +25*quantidade2;
+                        subtotal1 = subtotal1 +3*quantidade2;
+                        sub2.setText(String.valueOf("R$" + subtotal1));
+                        break;
+                    case 5:
+                        subtotal1 = subtotal1 +4*quantidade2;
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                 }
