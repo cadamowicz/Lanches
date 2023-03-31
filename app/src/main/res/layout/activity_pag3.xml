@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
         android:layout_marginTop="37dp"
-        android:text="1. Coca-cola lata R$5,00"
+        android:text="1. Coca-cola lata R$6,00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
         android:layout_marginTop="26dp"
-        android:text="4. Água com gás R$3,00"
+        android:text="4. Água com gás R$4,00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
         android:layout_marginTop="27dp"
-        android:text="5. Suco del Vale lata R$4,00"
+        android:text="5. Suco del Vale lata R$7,00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 

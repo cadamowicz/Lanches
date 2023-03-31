@@ -48,7 +48,7 @@ public class pag3 extends AppCompatActivity {
 
                 switch (opcao2) {
                     case 1:
-                        subtotal1 = subtotal1 +5*quantidade2;
+                        subtotal1 = subtotal1 +6*quantidade2;
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                     case 2:
@@ -60,11 +60,11 @@ public class pag3 extends AppCompatActivity {
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                     case 4:
-                        subtotal1 = subtotal1 +3*quantidade2;
+                        subtotal1 = subtotal1 +4*quantidade2;
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                     case 5:
-                        subtotal1 = subtotal1 +4*quantidade2;
+                        subtotal1 = subtotal1 +7*quantidade2;
                         sub2.setText(String.valueOf("R$" + subtotal1));
                         break;
                 }
@@ -75,6 +75,11 @@ public class pag3 extends AppCompatActivity {
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent2 = new Intent(pag3.this, pag4.class);
+
+                intent2.putExtra("totalpag3",String.valueOf(subtotal1) );
+                startActivity(intent2);
 
             }
         });
