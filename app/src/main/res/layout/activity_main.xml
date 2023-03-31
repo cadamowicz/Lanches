@@ -22,6 +22,7 @@
         android:layout_marginTop="233dp"
         android:layout_marginEnd="105dp"
         android:layout_marginBottom="292dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Seja bem vindo ao Burger Mania"
         app:layout_constraintBottom_toTopOf="@+id/b1"
         app:layout_constraintEnd_toEndOf="parent"
