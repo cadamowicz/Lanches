@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/coca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
@@ -30,44 +30,44 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/guarana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="17dp"
         android:text="2. Guaraná Kuat R$5,00"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/coca" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/aguasgas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
         android:layout_marginTop="23dp"
         android:text="3. Água sem gás R$3,00"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/guarana" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/aguacgas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
         android:layout_marginTop="26dp"
         android:text="4. Água com gás R$4,00"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/aguasgas" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/delvale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
         android:layout_marginTop="27dp"
         android:text="5. Suco del Vale lata R$7,00"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/aguacgas" />
 
     <TextView
         android:id="@+id/textView27"
@@ -87,7 +87,7 @@
         android:layout_marginTop="36dp"
         android:text="Escolha suas bebidas pelo número"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/delvale" />
 
     <EditText
         android:id="@+id/opbebida"
@@ -98,7 +98,7 @@
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/delvale" />
 
     <EditText
         android:id="@+id/qtdebebida"

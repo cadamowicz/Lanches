@@ -12,7 +12,7 @@ public class pag4 extends AppCompatActivity {
 
     TextView valortotalpedido;
 
-    TextView lanchetotal;
+    TextView lanchetotal,bebidatotal;
     Button b6;
 
     @Override
@@ -21,15 +21,17 @@ public class pag4 extends AppCompatActivity {
         setContentView(R.layout.activity_pag4);
         b6=findViewById(R.id.b6);
         valortotalpedido=findViewById(R.id.valortotalpedido);
+        bebidatotal=findViewById(R.id.bebidatotal);
         lanchetotal=findViewById(R.id.lanchetotal);
 
         Intent intent2 = getIntent();
         String totalfinal = intent2.getStringExtra("totalpag3");
-        valortotalpedido.setText(totalfinal);
-
-        Intent intent1 = getIntent();
-        String totallanches = intent1.getStringExtra("totallanches");
+        String totallanches = intent2.getStringExtra("novoalllanches");
+        String totalbebidas = intent2.getStringExtra("bebidas");
         lanchetotal.setText(totallanches);
+        bebidatotal.setText(totalbebidas);
+        valortotalpedido.setText("R$" + totalfinal);
+
 
         b6.setOnClickListener(new View.OnClickListener() {
             @Override

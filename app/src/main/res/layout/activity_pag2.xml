@@ -18,7 +18,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/xburguer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/xtudao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
@@ -47,10 +47,10 @@
         android:layout_marginTop="28dp"
         android:text="Pão, hamburguer artesanal, queijo, presunto, alface, tomate, molho da casa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/xsalada" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/xsalada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -69,10 +69,10 @@
         android:layout_marginTop="24dp"
         android:text="Pão, hamburguer artesanal, queijo, bacon, molho da casa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/xbacon" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/xbacon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -89,7 +89,7 @@
         android:layout_marginTop="27dp"
         android:text="Pão, hamburguer artesanal, queijo, presunto, bacon, ovo, calabresa, alface, tomate, milho, cheddar, molho da casa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/xtudao" />
 
     <TextView
         android:id="@+id/textView5"
@@ -109,7 +109,7 @@
         android:layout_marginTop="18dp"
         android:text="Pão, hamburguer artesanal, queijo, molho da casa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/xburguer" />
 
     <TextView
         android:id="@+id/textView12"

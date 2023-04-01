@@ -12,12 +12,15 @@ import android.widget.TextView;
 public class pag2 extends AppCompatActivity {
 
     EditText oplanche;
+    TextView xburguer, xsalada,xbacon,xtudao;
     EditText qtde;
     TextView sub1;
     Button b2;
     Button b3;
 
     float subtotal=0;
+
+    String alllanches="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,11 @@ public class pag2 extends AppCompatActivity {
         b2=findViewById(R.id.b2);
         qtde=findViewById(R.id.qtde);
         b3=findViewById(R.id.b3);
+        xburguer=findViewById(R.id.xburguer);
+        xsalada=findViewById(R.id.xsalada);
+        xbacon=findViewById(R.id.xbacon);
+        xtudao=findViewById(R.id.xtudao);
+
 
 
         b2.setOnClickListener(new View.OnClickListener() {
@@ -42,18 +50,23 @@ public class pag2 extends AppCompatActivity {
                 switch (opcao1) {
                     case 1:
                         subtotal=subtotal+10*quantidade;
+                        alllanches = alllanches + "\n" + xburguer.getText().toString();
                         sub1.setText(String.valueOf("R$" + subtotal));
+
                         break;
                     case 2:
                         subtotal=subtotal+15*quantidade;
+                        alllanches = alllanches + "\n" + xsalada.getText().toString();
                         sub1.setText(String.valueOf("R$" + subtotal));
                         break;
                     case 3:
                         subtotal=subtotal+18*quantidade;
+                        alllanches = alllanches + "\n" + xbacon.getText().toString();
                         sub1.setText(String.valueOf("R$" + subtotal));
                         break;
                     case 4:
                         subtotal=subtotal+25*quantidade;
+                        alllanches = alllanches + "\n" + xtudao.getText().toString();
                         sub1.setText(String.valueOf("R$" + subtotal));
                         break;
                 }
@@ -67,7 +80,7 @@ public class pag2 extends AppCompatActivity {
 
                 Intent intent1 = new Intent(pag2.this, pag3.class);
                 intent1.putExtra("totalpag2",String.valueOf(subtotal) );
-                intent1.putExtra("lanches",String.valueOf(oplanche));
+                intent1.putExtra("lanches",String.valueOf(alllanches));
                 startActivity(intent1);
 
 
