@@ -10,144 +10,240 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="178dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="@font/alfa_slab_one"
         android:text="ESCOLHA A SUA BEBIDA"
+        android:textColor="#020202"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/coca"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="37dp"
-        android:text="1. Coca-cola lata R$6,00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
-        android:id="@+id/guarana"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="17dp"
-        android:text="2. Guaraná Kuat R$5,00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coca" />
 
     <TextView
         android:id="@+id/aguasgas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="21dp"
         android:layout_marginTop="23dp"
+        android:layout_marginEnd="128dp"
         android:text="3. Água sem gás R$3,00"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/guarana" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/aguasgas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/bebida" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/aguacgas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/bebida" />
 
     <TextView
         android:id="@+id/aguacgas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="128dp"
         android:text="4. Água com gás R$4,00"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/aguasgas" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/delvale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/bebida" />
 
     <TextView
         android:id="@+id/delvale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="27dp"
+        android:layout_marginEnd="111dp"
         android:text="5. Suco del Vale lata R$7,00"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/aguacgas" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guarana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/bebida" />
+
+    <TextView
+        android:id="@+id/guarana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="134dp"
+        android:text="2. Guaraná Kuat R$5,00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/coca" />
+
+    <TextView
+        android:id="@+id/coca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="130dp"
+        android:text="1. Coca-cola lata R$6,00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="57dp"
         android:layout_height="27dp"
-        android:layout_marginStart="253dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="77dp"
         android:text="Qtde"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qtdebebida" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="105dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="36dp"
-        android:text="Escolha suas bebidas pelo número"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/delvale" />
-
-    <EditText
-        android:id="@+id/opbebida"
-        android:layout_width="63dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/delvale" />
-
-    <EditText
-        android:id="@+id/qtdebebida"
-        android:layout_width="63dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="334dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/opbebida"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/b4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="16dp"
-        android:text="Adicionar"
-        app:layout_constraintStart_toEndOf="@+id/sub2"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="49dp"
-        android:text="Subtotal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
         android:id="@+id/sub2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="48dp"
         android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/b5"
         app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="39dp"
+        android:text="Subtotal"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/sub2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="77dp"
+        android:backgroundTint="#D80606"
+        android:text="Adicionar"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/opbebida" />
+
+    <EditText
+        android:id="@+id/qtdebebida"
+        android:layout_width="63dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        app:layout_constraintStart_toEndOf="@+id/opbebida"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <Button
         android:id="@+id/b5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="78dp"
+        android:backgroundTint="#D80606"
         android:text="Proximo"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sub2"
         app:layout_constraintTop_toBottomOf="@+id/b4" />
+
+    <EditText
+        android:id="@+id/opbebida"
+        android:layout_width="63dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/qtdebebida"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/delvale" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="11dp"
+        android:text="Escolha suas bebidas pelo número"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/opbebida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/coca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bebida" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
